@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+
+<body style="
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+">
+
+<header style="
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+">
+    <h2 style="margin: 0;">Registration Form</h2>
+</header>
+
+<nav style="
+    background-color: #334155;
+    padding: 10px 0;
+">
+    <ul style="
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    ">
+        <li><a href="../index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="list.html" style="color: white; text-decoration: none;">List</a></li>
+        <li><a href="tables.html" style="color: white; text-decoration: none;">Tables</a></li>
+        <li><a href="media1.html" style="color: white; text-decoration: none;">Media</a></li>
+        <li><a href="images.html" style="color: white; text-decoration: none;">Images</a></li>
+        <li><a href="layout.html" style="color: white; text-decoration: none;">Layouts</a></li>
+        <li><a href="forms.html" style="color: white; text-decoration: none;">Forms</a></li>
+    </ul>
+</nav>
+
+<main style="
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+">
+
+<form action="" method="post">
+
+    <!-- Surname -->
+    <label for="sname" style="display:inline-block; width:30%;">Surname:</label>
+    <input type="text" id="sname" name="sname" required
+        placeholder="Enter surname"
+        style="width:60%; padding:8px; margin-bottom:10px; border-right:5px solid red;"><br>
+
+    <!-- First Name -->
+    <label for="fname" style="display:inline-block; width:30%;">First Name:</label>
+    <input type="text" id="fname" name="fname" required
+        placeholder="Enter first name"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Other Names -->
+    <label for="oname" style="display:inline-block; width:30%;">Other Names:</label>
+    <input type="text" id="oname" name="oname"
+        placeholder="Other names (if any)"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Gender -->
+    <fieldset style="margin-bottom:15px; padding:10px;">
+        <legend><strong>Select Gender</strong></legend>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+    </fieldset>
+
+    <!-- Date of Birth -->
+    <label for="dob" style="display:inline-block; width:30%;">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required
+        min="2015-12-02" max="2025-12-02"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Email -->
+    <label for="email" style="display:inline-block; width:30%;">E-mail:</label>
+    <input type="email" id="email" name="email" required
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Phone -->
+    <label for="telNo" style="display:inline-block; width:30%;">Phone Number:</label>
+    <input type="tel" id="telNo" name="telNo"
+        placeholder="024-1234567"
+        pattern="[0-9]{3}-[0-9]{7}"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Games -->
+    <fieldset style="margin-bottom:15px; padding:10px;">
+        <legend><strong>Select Favorite Game</strong></legend>
+
+        <input type="checkbox" id="football" name="games[]" value="Football">
+        <label for="football">Football</label><br>
+
+        <input type="checkbox" id="volleyball" name="games[]" value="Volleyball">
+        <label for="volleyball">Volleyball</label><br>
+
+        <input type="checkbox" id="lawnTennis" name="games[]" value="Lawn Tennis">
+        <label for="lawnTennis">Lawn Tennis</label><br>
+
+        <input type="checkbox" id="tableTennis" name="games[]" value="Table Tennis">
+        <label for="tableTennis">Table Tennis</label>
+    </fieldset>
+
+    <!-- Religion -->
+    <label for="religion" style="display:inline-block; width:30%;">Religion:</label>
+    <select id="religion" name="religion"
+        style="width:60%; padding:8px; margin-bottom:10px;">
+        <option value="">-- Select --</option>
+        <option>Christian</option>
+        <option>Muslim</option>
+        <option>Buddhist</option>
+        <option>Traditionalist</option>
+        <option>Others</option>
+    </select><br>
+
+    <!-- Weight -->
+    <label for="wgt" style="display:inline-block; width:30%;">Weight (kg):</label>
+    <input type="number" id="wgt" name="wgt" step="0.05"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Height -->
+    <label for="hgt" style="display:inline-block; width:30%;">Height (m):</label>
+    <input type="number" id="hgt" name="hgt" step="0.01"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Siblings -->
+    <label for="noSib" style="display:inline-block; width:30%;">No. of Siblings:</label>
+    <input type="number" id="noSib" name="noSib"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Color -->
+    <label for="fcolor" style="display:inline-block; width:30%;">Favorite Color:</label>
+    <input type="color" id="fcolor" name="fcolor"
+        style="margin-bottom:10px;"><br>
+
+    <!-- Password -->
+    <label for="scode" style="display:inline-block; width:30%;">Secret Code:</label>
+    <input type="password" id="scode" name="scode" minlength="8"
+        style="width:60%; padding:8px; margin-bottom:10px;"><br>
+
+    <!-- Comment -->
+    <label for="com" style="display:inline-block; width:30%;">Comment:</label>
+    <textarea id="com" name="com" rows="4"
+        style="width:60%; padding:8px; margin-bottom:10px;"></textarea><br>
+
+    <!-- File -->
+    <label for="wassceResult" style="display:inline-block; width:30%;">WASSCE Result:</label>
+    <input type="file" id="wassceResult" name="wassceResult"
+        accept=".pdf,.doc,.docx"
+        style="margin-bottom:20px;"><br>
+
+    <!-- Buttons -->
+    <button type="submit" style="
+        background-color:#1e293b;
+        color:white;
+        padding:10px 20px;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+    ">
+        REGISTER
+    </button>
+
+    <input type="reset" value="CLEAR FORM" style="
+        margin-left:10px;
+        padding:10px 20px;
+        border-radius:5px;
+        border:1px solid #ccc;
+        cursor:pointer;
+    ">
+
+</form>
+
+</main>
+
+<footer style="
+    background-color:#1e293b;
+    color:white;
+    text-align:center;
+    padding:15px;
+">
+    Developed by IT8 &reg; &trade; 2025
+</footer>
+
+</body>
+</html>

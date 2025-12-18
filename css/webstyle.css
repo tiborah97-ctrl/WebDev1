@@ -1,0 +1,200 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+header{
+    margin:0.25vw 0.5vw;
+    width: 99vw;
+    border: 2px;
+    border-style: solid;
+    border-color: blueviolet;
+    background-color: burlywood;
+    height:auto;
+    min-height: 15vh;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+nav,footer{
+    margin:0.5vw 0.25vw;
+    width:99vw;
+    height: auto;
+    min-height: 10vh;
+    border:2px solid blueviolet;
+    background-color:coral;
+    color:white;
+    font-size:x-large;
+    font-weight:bold;
+    text-align:center;
+  border-radius:0 0 5px 5px;
+  float: left;
+}
+aside{
+    width:15vw;
+    float:left;
+    height: auto;
+    min-height: 65vh;
+    border: 2px dotted purple;
+    background-color: blanchedalmond;
+    border-radius: 5px 0 0 5px;
+    text-align:center;
+    color: #ab00df;
+    margin-left: 0.5vw;
+    font-weight: bolder;
+}
+main{
+    width:64vw;
+    float:left;
+    border:2px groove purple;
+    background-color: peru;
+    height: auto;
+    min-height: 65vh;
+    margin: 0 0.25vw;
+    text-align:center ;
+    font-weight:600 ;
+    color: white;
+    padding-top:10px;
+}
+section{
+    width: 18vw;
+    border: 2px solid #551a88;
+    border-radius: 0 5px 5px 0;
+    height: auto;
+    min-height: 65vh;
+    background-color: bisque;
+    float: right;
+}
+article{
+    width:98%;
+    margin: 1% 1% 0 1%;
+    height:20vh;
+    border:1px solid gray;
+    background-color: coral;
+
+
+}
+nav li{
+list-style-type:none ;
+background-color:#68228baf;
+margin-top:0.5vh;
+width:12%;
+float:left;
+margin-right: 2%;
+height: auto;
+min-height: 8vh;
+}
+nav li:hover{
+    background-color: brown;
+    color: white;
+    font-size: x-large;
+    border-radius:10px;
+}
+
+
+@media only screen and (max-width:600px){
+    aside,section{
+    display:none;
+}
+header{
+    font-size:large;
+}
+main{
+    width: 98vw;
+    margin: 0.25vh;
+}
+nav li{
+    width: 95%;
+    margin: 0 2% 5min;
+}
+}
+
+@media only screen and ((min-width:600px) and (max-width:992px)){
+    aside,section{
+    display:none;
+
+}
+header{
+    font-size: large;
+}
+nav{
+    width: 30vw;
+    min-height: 80vmax;
+height: auto;
+}
+}
+nav li{
+    width:95% ;
+    margin: 0 2% 1.5vh;
+
+}
+main{
+    width: 98;
+    margin: 0.25vh 0.25vw;
+    text-align: justify;
+}
+iframe{width: 98%;}
+table{
+    width: 98%;
+}
+nav> ul{
+    display: contents;
+}
+tr:nth-child{
+    background-color: rgba(0, 0, 255, 0.6);
+}
+td:hoover,
+th:hover{
+    background-color: brown;
+    color: white;
+    font-size: xx-large;
+}
+tr:last-child{
+    background-color: blueviolet;
+    font-size: large;
+}
+label{
+    display: inline b;
+}
+
+
+
+/* Keep same site look – layout only */
+
+main {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+/* Align labels and inputs */
+main label {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 0.5rem;
+}
+
+/* Inputs follow site colors */
+main input,
+main select,
+main textarea {
+    width: 60%;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+}
+
+/* Highlight required surname field */
+.reg {
+    border-right-width: 4px;
+    border-right-style: solid;
+}
+
+/* Fieldset spacing only */
+main fieldset {
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+/* Buttons inherit site styles */
+main button,
+main input[type="reset"] {
+    margin-top: 1rem;
+}

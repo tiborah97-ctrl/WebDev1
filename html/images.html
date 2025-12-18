@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working with Images</title>
+</head>
+
+<body style="
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+">
+
+<header style="
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+">
+    <h1 style="margin: 0;">Working with Image Files</h1>
+</header>
+
+<main style="
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+">
+
+    <h2 style="margin-top: 0;">
+        Embedding Images using the <i>img</i> Tag
+    </h2>
+
+    <div style="
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    ">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+             alt="Flower image"
+             style="height:170px; border-radius:6px;">
+
+        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde"
+             alt="Flower image"
+             style="height:170px; border-radius:6px;">
+
+        <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551"
+             alt="Flower image"
+             style="height:170px; border-radius:6px;">
+    </div>
+
+    <h2>HTML5 Semantic <i>figure</i> Tag</h2>
+
+    <figure style="
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+    ">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946"
+             alt="Image of a flower"
+             style="
+                width:200px;
+                height:150px;
+                object-fit: cover;
+                border-radius:6px;
+             ">
+        <figcaption style="
+            margin-top: 8px;
+            font-weight: bold;
+        ">
+            Fig 1.2: Flower
+        </figcaption>
+    </figure>
+
+</main>
+
+<footer style="
+    background-color:#1e293b;
+    color:white;
+    text-align:center;
+    padding:15px;
+">
+    <a href="index.html" style="color:white; text-decoration:none;">Home</a>
+    &nbsp;|&nbsp;
+    <a href="list.html" style="color:white; text-decoration:none;">List</a>
+</footer>
+
+</body>
+</html>
