@@ -1,103 +1,150 @@
-
 <!DOCTYPE html>
-<head>            
-    <html>
-        <title>Tables used in HTML</title>
- <link rel="stylesheet" type="text/css" href="../CSS/webstyle.css">
-        </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Tables</title>
+</head>
 
-        <meta name="viewport" content="width =device-width, initial-scale=1.0"/>
-    <body>
-        <header>Working with HTML 5 semantics Tags for Layouts</header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="list.html">List</a></li>
-            <li><a href="forms.html">form</a></li>
-            <a href="tables.html"><li>tables</li></a>
-            <a href="media1.html"><li>media1</li></a> 
-            <a href="layout.html"><li>media1</li></a>
-             <a href="images.html.html"><li>media1</li></a>
+<body style="
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+">
 
-        </ul>
-    </nav>
-    <aside>Side Bar</aside>
-    <main>
+<header style="
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+">
+    <h1 style="margin: 0;">Working with Tables in HTML</h1>
+</header>
 
-        <style>
-            main
-            {
-                width: 81vw;
-            }
-        </style>
-        </head>
-        <header>
-        <h2>
-            Working with simple table structure
-        </h2>
-        </header>
-        <nav></nav>
-        <aside></aside>
-        <hr/>
-        <main>
-        <h3>working with simple tables</h3>
-        <table border="1" width="400px">
-            <caption>Table 1.1 Level 200 sem 1 course structure</caption>
-            <tr>
+<nav style="
+    background-color: #334155;
+    padding: 10px;
+">
+    <ul style="
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    ">
+        <li><a href="../index.html" style="color:white; text-decoration:none;">Home</a></li>
+        <li><a href="list.html" style="color:white; text-decoration:none;">List</a></li>
+        <li><a href="forms.html" style="color:white; text-decoration:none;">Forms</a></li>
+        <li><a href="tables.html" style="color:white; text-decoration:none;">Tables</a></li>
+        <li><a href="media1.html" style="color:white; text-decoration:none;">Media</a></li>
+        <li><a href="layout.html" style="color:white; text-decoration:none;">Layouts</a></li>
+        <li><a href="images.html" style="color:white; text-decoration:none;">Images</a></li>
+    </ul>
+</nav>
+
+<div style="
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+">
+
+    <aside style="
+        width: 25%;
+        background-color: #e5e7eb;
+        padding: 15px;
+        border-radius: 6px;
+        font-weight: bold;
+    ">
+        Side Bar
+    </aside>
+
+    <main style="
+        width: 75%;
+        background-color: white;
+        padding: 25px;
+        border-radius: 6px;
+    ">
+
+        <h2>Simple Table Structure</h2>
+
+        <table border="1" style="
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        ">
+            <caption style="font-weight:bold; margin-bottom:10px;">Table 1.1: Level 200 Sem 1 Course Structure</caption>
+            <tr style="background-color:#e2e8f0;">
                 <th>Course Code</th>
-                <th>course Name</th>
+                <th>Course Name</th>
                 <th>Credit Hours</th>
             </tr>
             <tr>
                 <td>BSIT203</td>
-                <td>web Development</td>
+                <td>Web Development</td>
                 <td align="right">3</td>
             </tr>
-
             <tr>
-                <td>BSIT 403</td>
+                <td>BSIT403</td>
                 <td>Computer Hardware</td>
                 <td align="right">3</td>
             </tr>
-
-             <tr>
-                <td>BSIT 409</td>
-                <td>Information System</td>
+            <tr>
+                <td>BSIT409</td>
+                <td>Information Systems</td>
                 <td align="right">3</td>
             </tr>
         </table>
-        <h3>Working with tables merge cells using <i>colspan<b>rowspan</b></i> Attribute</h3>
-        <Caption>table 1.2: Tables with meged cells</Caption>
-        <table width="700px" border="2px"
-        <tr align="center">
-        <td>A</td>
-        <td colspan="3" rowspan="2">B</td>
-        <td>C</td>
-        <td rowspan="2">D</td>
-        <tr>
-            <td rowspan="2">F</td>
-            <td>E</td>
-<tr>
-    <td colspan="2">G</td>
-    <td colspan="2">H</td>
-    <td rowspan="3">I</td>
-</tr>
-        
-        </tr>
-        <tr>
-            <td colspan="2">M</td>
-            <td>L</td>
-            <td>K</td>
-            <td>J</td>
-        </tr>
-<tr>
-    <td>N</td>
-    <td>O</td>
-    <td>P</td>
-    <td colspan="2">Q</td>
-</tr>
-</table>
-</main>
-<footer>Developed by IT Group 8</footer>
-    
-    </html>
+
+        <h2>Table with Merged Cells (colspan & rowspan)</h2>
+
+        <table border="1" style="
+            width: 100%;
+            border-collapse: collapse;
+        ">
+            <caption style="font-weight:bold; margin-bottom:10px;">Table 1.2: Merged Cells Example</caption>
+            <tr align="center">
+                <td>A</td>
+                <td colspan="3" rowspan="2">B</td>
+                <td>C</td>
+                <td rowspan="2">D</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td colspan="2">G</td>
+                <td colspan="2">H</td>
+                <td rowspan="3">I</td>
+            </tr>
+            <tr>
+                <td colspan="2">M</td>
+                <td>L</td>
+                <td>K</td>
+                <td>J</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>O</td>
+                <td>P</td>
+                <td colspan="2">Q</td>
+            </tr>
+        </table>
+
+    </main>
+</div>
+
+<footer style="
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+">
+    Developed by IT Group 8 &trade; 2025
+</footer>
+
+</body>
+</html>

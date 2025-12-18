@@ -1,78 +1,148 @@
 <!DOCTYPE html>
-<html>
-    <head>
-<title>Working with media</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Media</title>
+</head>
 
-        <link rel="stylesheet" type="text/css" href="../CSS/webstyle.css">
-        </head>
+<body style="
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+">
 
-        <meta name="viewport" content="width =device-width, initial-scale=1.0"/>
-    </head>
-    <body>
-        <header>Working with HTML 5 semantics Tags for Layouts</header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="list.html">List</a></li>
-            <li><a href="forms.html">Forms</a></li>
-            <a href="tables.html"><li>tables</li></a>
-            <a href="media1.html"><li>media1</li></a>
-            <li><a href="layout.html">Layouts</a></li>
-        </ul>
-    </nav>
-    <aside>Side Bar</aside>
-    <main>
-    <style>{
-        width:78vw;
-    }
-    @media only screen and {}
+<header style="
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+">
+    <h1 style="margin: 0;">Working with Media Files</h1>
+</header>
 
-    </style>
+<nav style="
+    background-color: #334155;
+    padding: 10px;
+">
+    <ul style="
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    ">
+        <li><a href="../index.html" style="color:white; text-decoration:none;">Home</a></li>
+        <li><a href="list.html" style="color:white; text-decoration:none;">List</a></li>
+        <li><a href="forms.html" style="color:white; text-decoration:none;">Forms</a></li>
+        <li><a href="tables.html" style="color:white; text-decoration:none;">Tables</a></li>
+        <li><a href="media1.html" style="color:white; text-decoration:none;">Media</a></li>
+        <li><a href="layout.html" style="color:white; text-decoration:none;">Layouts</a></li>
+        <li><a href="images.html" style="color:white; text-decoration:none;">Images</a></li>
+    </ul>
+</nav>
 
-        <h1>Workng with media files</h1>
-        <h2>
-            Embedding Audio Files Using <i>audio</i>tag and  the <i>src</i>Attribute
-        </h2>
-        <audio src="music/music2.mp3" controls loop muted autoplay></audio>
-        <h2>
-            Embedding Audio Files Using <i>audio</i>tag and  the <i>src</i>Attribute
-        </h2>
-        <audio controls muted loop>
-        <source src="music/music1.mp3"  control loop autoplay type="audio/mp3">
+<div style="
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+">
+
+    <aside style="
+        width: 25%;
+        background-color: #e5e7eb;
+        padding: 15px;
+        border-radius: 6px;
+        font-weight: bold;
+    ">
+        Side Bar
+    </aside>
+
+    <main style="
+        width: 75%;
+        background-color: white;
+        padding: 25px;
+        border-radius: 6px;
+    ">
+
+        <h2>Embedding Audio Files</h2>
+        <p>Using the <b>&lt;audio&gt;</b> tag</p>
+
+        <audio controls style="width:100%;">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
         </audio>
-        <h2>
-            Embedding Video Files Using <i>video</i>tag and the <src>Attribute</h2>
-              <video width="300px" height="200px" controls>
-           <source src="videos/video3.mp4"></video>
-           <br>
-           <video width="300px" height="200px" controls>
-           <source src="videos/video4.mp4"></video>
-           <br>
-           <video width="300px" height="200px" controls>
-           <source src="videos/video2.mp4"></video>
-           <br>
-           <video width="300px" height="200px" controls>
-           <source src="videos/video1.mp4"></video>
-           <br>
-           
-           
-           
-                <h3>Embedding audio files using <i>audio</i>tag with the<i>source</i>tag and src</h3>
-                <iframe src="docs/diet.pdf" width="600px" height="500px" framework="2"></iframe>
-                <iframe
-                src="https://upsa.edu.gh"
-                frameborder="0"
-                width="650px"
-                height="350px"></iframe>
-        </h2>
-        <h3>Embedding youtube video</h3>
-        <iframe src="https:// www.youtube.com/embed/TkqyQ0yzVVo1JYbU"></iframe>
-        <h3>Embedding maps</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31760.832092369747!2d-0.15396416187287074!3d5.698110095356092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9bc7ffdb5979%3A0xa72f231ea38e31c4!2sLakeside%20Marina%20Park!5e0!3m2!1sen!2sgh!4v1762920265966!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-<a href="index.html">Home</a>&nbsp;<a href="list.html">List</a>&nbsp;<a
- href="image.html">Image</a>
- </main>
- <Footer>Developed by IT Group 8 &trade;</Footer>
-</body>    
+
+        <br><br>
+
+        <audio controls loop style="width:100%;">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        </audio>
+
+        <h2>Embedding Video Files</h2>
+        <p>Using the <b>&lt;video&gt;</b> tag</p>
+
+        <div style="display:flex; gap:15px; flex-wrap:wrap;">
+            <video controls width="300">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+
+            <video controls width="300">
+                <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h2>Embedding External Content</h2>
+
+        <h3>Website (Iframe)</h3>
+        <iframe
+            src="https://upsa.edu.gh"
+            width="100%"
+            height="300"
+            style="border:1px solid #ccc;"
+            loading="lazy">
+        </iframe>
+
+        <h3>Embedding YouTube Video</h3>
+        <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/TkqyQ0yzVVo"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <h3>Embedding Google Map</h3>
+        <iframe
+            src="https://www.google.com/maps?q=Accra,Ghana&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+
+    </main>
+
+</div>
+
+<footer style="
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+">
+    <a href="../index.html" style="color:white; text-decoration:none;">Home</a>
+    &nbsp;|&nbsp;
+    <a href="list.html" style="color:white; text-decoration:none;">List</a>
+    &nbsp;|&nbsp;
+    <a href="images.html" style="color:white; text-decoration:none;">Images</a>
+    <br><br>
+    Developed by IT Group 8 &trade; 2025
+</footer>
+
+</body>
 </html>
